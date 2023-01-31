@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Statistics</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="png">
+    <link rel="stylesheet" href="css/app.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ============== HEADER ============== -->
+    <header class="header-flex">
+        <div class="header-elements">
+            <img src="assets/images/logo.png" alt="Company logo" class="header-logo">
+            <div class="tab-row">
+                <a class="tab-button"><div>About COVID-19</div></a>
+                <a class="tab-button"><div>Safety Manual</div></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main container -->
+    <div class="flex-main">
+        <div class="flex-container">
+
+            <!-- container for 'search country' feature -->
+            <div class="country-container"> 
+    
+                <!-- container for list of countries -->
+                <div class="country-list-container">
+    
+                    <!-- container for search bar elements -->                 
+                    <div class="search-container">                         
+                        <div class="search-bar">  <!-- search bar -->      
+                            <input id="search-input" class="search-input" placeholder="Search country" type="text">
+                        </div>
+                    </div>
+    
+                    <!-- container for country names -->
+                    <div class="country-list"></div>
+                </div>
+            </div>
+    
+            <!-- container for COVID-19 data -->
+            <div class="statistics-container">   
+                <!-- displays country name --> 
+                <div class="country-name"></div> 
+    
+    
+                <!-- shows data about the chosen country's number of CONFIRMED cases -->
+                <div class="c-cases-container">
+                    <div class="label">Confirmed Cases</div>
+                    <div class="value"></div>
+                    <div class="new-value"></div>
+                </div>
+                    
+                <!-- shows data about the chosen country's number of RECOVERED cases -->
+                <div class="r-cases-container">
+                    <div class="label">Recovered</div>
+                    <div class="value"></div>
+                    <div class="new-value"></div>
+                </div>
+    
+                <!-- shows data about the chosen country's number of RECOVERED cases -->
+                <div class="d-container">
+                    <div class="label">Deaths</div>
+                    <div class="value"></div>
+                    <div class="new-value"></div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/search_country.js"></script>
+    <script src="scripts/app.js"></script>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+</body>
+</html>
